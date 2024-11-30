@@ -23,7 +23,7 @@ contract RockPaperScissors {
     address[] members;
     address public winnerAddress;
 
-    constructo() payable { host = payable(msg.sender); }
+    constructor() payable { host = payable(msg.sender); }
         
     function auction(bytes32 blindedAuction) external{
         require(auctionCount<=2,"The number of auction is already full");
